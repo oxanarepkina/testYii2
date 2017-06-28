@@ -63,7 +63,7 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        return $this->redirect(['test']);
     }
 
     /**
@@ -126,6 +126,9 @@ class SiteController extends Controller
         return $this->render('about');
     }
 
+    /**
+     * @return string
+     */
     public function actionTest()
     {
         $model = new TestTask();
